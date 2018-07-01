@@ -8,36 +8,34 @@ Why rebuild existing functions? To gain a real understanding for each of them an
 
 1. Libc functions
 
-Libc functions | Status
---------- | --------
-memset | pending
-bzero | pending
-memcpy | pending
-memccpy | pending
-memmove | pending
-memchr | pending
-memcmp | pending
-strlen | pending
-strdup | pending
-strcpy | pending
-strncpy | pending
-strcat | pending
-strncat | pending
-strlcat | pending
-strchr | pending
-strrchr | pending
-strstr | pending
-strnstr | pending
-strcmp | pending
-strncmp | pending
-atoi | pending
-isalpha | pending
-isdigit | pending
-isalnum | pending
-isascii | pending
-isprint | pending
-toupper | pending
-tolower | pending
+* memset
+* bzero
+* memcpy
+* memccpy
+* memmove
+* memchr
+* memcmp
+* strlen
+* strdup
+* strcpy
+* strncpy
+* strcat
+* strncat
+* strlcat
+* strchr
+* strrchr
+* strstr
+* strnstr
+* strcmp
+* strncmp
+* atoi
+* isalpha
+* isdigit
+* isalnum
+* isascii
+* isprint
+* toupper
+* tolower
 
 2. Additional functions
 
@@ -67,4 +65,12 @@ tolower | pending
 * ft_putnbr_fd
 
 3. Bonus functions
+
+* ft_lstnew
+* ft_lstdelone
+* ft_lstdel
+* ft_lstadd
+* ft_lstiter
+* ft_lstmap
+
 4. Personal functions (will grow along other projects)
