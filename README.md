@@ -6,7 +6,7 @@ Why rebuild existing functions? To gain a real understanding for each of them an
 
 # Which functions are included?
 
-## 1. Libc functions
+###1. Libc functions
 
 * memset
 * bzero
@@ -37,7 +37,7 @@ Why rebuild existing functions? To gain a real understanding for each of them an
 * toupper
 * tolower
 
-## 2. Additional functions
+###2. Additional functions
 
 * ft_memalloc
 * ft_memdel
@@ -64,7 +64,7 @@ Why rebuild existing functions? To gain a real understanding for each of them an
 * ft_putendl_fd
 * ft_putnbr_fd
 
-## 3. Bonus functions
+###3. Bonus functions
 
 * ft_lstnew
 * ft_lstdelone
@@ -73,4 +73,4 @@ Why rebuild existing functions? To gain a real understanding for each of them an
 * ft_lstiter
 * ft_lstmap
 
-## 4. Personal functions (will grow along other projects)
+### 4. Personal functions (will grow along other projects)
