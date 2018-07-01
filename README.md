@@ -6,10 +6,7 @@ Why rebuild existing functions? To gain a real understanding for each of them an
 
 # Which functions are included?
 
-1. Libc functions.
-2. Additional functions.
-3. Bonus functions.
-4. Personal functions (will grow along other projects).
+1. Libc functions
 
 Libc functions | Status
 --------- | --------
@@ -41,3 +38,33 @@ isascii | pending
 isprint | pending
 toupper | pending
 tolower | pending
+
+2. Additional functions
+
+* ft_memalloc
+* ft_memdel
+* ft_strnew
+* ft_strdel
+* ft_strclr
+* ft_striter
+* ft_striteri
+* ft_strmap
+* ft_strmapi
+* ft_strequ
+* ft_strnequ
+* ft_strsub
+* ft_strjoin
+* ft_strtrim
+* ft_strsplit
+* ft_itoa
+* ft_putchar
+* ft_putstr
+* ft_putendl
+* ft_putnbr
+* ft_putchar_fd
+* ft_putstr_fd
+* ft_putendl_fd
+* ft_putnbr_fd
+
+3. Bonus functions
+4. Personal functions (will grow along other projects)
