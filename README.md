@@ -55,7 +55,7 @@ Why rebuild existing functions? To gain a real understanding for each of them an
 * ft_strtrim
 * ft_strsplit
 * ft_itoa
-* ft_putchar - DONE
+* *ft_putchar*
 * ft_putstr
 * ft_putendl
 * ft_putnbr
