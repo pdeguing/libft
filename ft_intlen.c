@@ -12,12 +12,12 @@
 
 #include "libft.h"
 
-size_t	ft_intlen(int n)
+int	ft_intlen(u_int64_t n, int base)
 {
-	size_t	i;
+	int	i;
 
 	i = 1;
-	while (n /= 10)
+	while (n /= base)
 		i++;
 	return (i);
 }

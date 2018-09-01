@@ -83,7 +83,8 @@ char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 
 int					ft_atoi(const char *str);
-char				*ft_itoa(int n);
+char				*ft_itoa(int64_t n, int base);
+char				*ft_utoa(u_int64_t n, int base);
 
 t_list				*ft_lstnew(const void *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
@@ -94,6 +95,7 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 int					ft_wrdc(char *s, char c);
 int					ft_wrdlen(char *s, char c);
-size_t				ft_intlen(int n);
+int				ft_intlen(u_int64_t n, int base);
+char				*ft_capitalize(char *str);
 
 #endif
