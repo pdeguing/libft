@@ -5,10 +5,10 @@ char	*ft_capitalize(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 	{
 		if (ft_islower(str[i]))
-			ft_toupper(str[i]);
+			str[i] -= 32;
 		i++;
 	}
 	return (str);
