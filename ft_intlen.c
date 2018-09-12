@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_intlen(u_int64_t n, int base)
+int	ft_intlen(long long n, int base)
 {
 	int	i;
 
