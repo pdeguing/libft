@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/11 17:30:59 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/13 14:15:59 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/09/20 16:07:25 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ typedef struct	s_f
 	int			sign;
 	int			neg;
 	int			space;
-	int			minimal_width;
+	int			star;
+	int			min_width;
 	int			precision;
 	int			modifier;
 	char		specifier;

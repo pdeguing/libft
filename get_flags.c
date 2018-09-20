@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/13 12:08:26 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/13 14:30:58 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/09/20 16:06:51 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 void		flags_set(t_f *f, int *i, const char *format)
 {
-	while (format[*i] && ft_strchr("#0-+ ", format[*i]))
+	while (format[*i] && ft_strchr("#0-+ *", format[*i]))
 	{
 		if (format[*i] == '#')
 			f->hash = 1;
@@ -33,6 +33,8 @@ void		flags_set(t_f *f, int *i, const char *format)
 			f->sign = 1;
 		if (format[*i] == ' ')
 			f->space = 1;
+		if (format[*i] == '*')
+			f->star = 1;
 		*i = *i + 1;
 	}
 }
@@ -95,7 +97,7 @@ void		flags_init(t_f *f, int *i, const char *format)
 	flags_set(f, i, format);
 	if (ft_isdigit(format[*i]))
 	{
-		f->minimal_width = ft_atoi(&format[*i]);
+		f->min_width = ft_atoi(&format[*i]);
 		while (format[*i] && ft_isdigit(format[*i]))
 			*i = *i + 1;
 	}

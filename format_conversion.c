@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/13 11:10:51 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/13 11:57:18 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/09/20 16:07:24 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	format_width(t_f *f, int len, char **prefix, char **suffix)
 	char	*affix;
 	int		size;
 
-	size = f->minimal_width - len;
+	size = f->min_width - len;
 	if (f->hash == 1 && f->zero == 1)
 		size -= 2;
 	if ((f->sign == 1 || f->neg == 1) && f->zero == 1)
@@ -93,7 +93,7 @@ void	format_conversion(t_f *f, char **fmt, char **pref, char **suf)
 	if (f->zero == 0)
 		format_sign(f, pref);
 	len += ft_strlen(*pref);
-	if (len < f->minimal_width)
+	if (len < f->min_width)
 		format_width(f, len, pref, suf);
 	if (f->zero == 1)
 		format_sign(f, pref);
