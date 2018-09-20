@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/09 13:09:12 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/13 11:17:18 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/09/15 16:19:39 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
+# include "ft_printf.h"
 
 typedef struct		s_list
 {
