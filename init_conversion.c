@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/13 11:11:26 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/20 16:06:29 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/09/20 16:26:10 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ t_f		*f_new(void)
 	new->sign = 0;
 	new->neg = 0;
 	new->space = 0;
+	new->star = 0;
 	new->min_width = 0;
 	new->precision = -1;
 	new->modifier = 0;
