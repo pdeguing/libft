@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/13 11:11:03 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/13 14:12:55 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/09/20 16:27:39 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ int		get_conversion(t_f *f, va_list args)
 	char	**suffix;
 	int		ret;
 
+	if (f->star == 1)
+		f->min_width = va_arg(args, int);
 	if (!(format = (char **)malloc(sizeof(char *))))
 		return (-1);
 	*format = init_format(f, args);
