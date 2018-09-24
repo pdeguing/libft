@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/13 12:08:26 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/20 16:06:51 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/09/24 13:49:37 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ void		flags_modifier(t_f *f, int *i, const char *format)
 
 void		flags_specifier(t_f *f, int *i, const char *format)
 {
-	if (!format[*i] || !ft_strchr("sSpdDioOuUxXcC%", format[*i]))
+	if (!format[*i] || !ft_strchr("sSpdDioOuUxXcCb%", format[*i]))
 		f->error = 1;
 	else
 	{
@@ -78,6 +78,10 @@ void		flags_specifier(t_f *f, int *i, const char *format)
 		{
 			f->sign = 0;
 			f->space = 0;
+		}
+		if (f->specifier == 'b')
+		{
+			f->precision = 8;
 		}
 		*i = *i + 1;
 	}

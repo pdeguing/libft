@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/13 11:11:03 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/20 16:27:39 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/09/24 12:14:35 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*init_format(t_f *f, va_list args)
 		return (format_str(f, args));
 	if (f->specifier == 'c' || f->specifier == '%')
 		return (format_char(f, args));
-	if (ft_strchr("diouxX", f->specifier))
+	if (ft_strchr("diouxXb", f->specifier))
 	{
 		format = format_int(f, args);
 		if (f->precision == 0 && *format == '0')

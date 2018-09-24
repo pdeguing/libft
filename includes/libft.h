@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/09 13:09:12 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/15 16:19:39 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/09/24 13:44:42 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,5 +103,7 @@ int					ft_intlen(long long n, int base);
 int					ft_uintlen(unsigned long long n, int base);
 char				*ft_capitalize(char *str);
 char				*ft_ctostr(char c);
+
+int					ft_printf(const char *fmt, ...);
 
 #endif

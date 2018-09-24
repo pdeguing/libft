@@ -6,7 +6,7 @@
 #    By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/11 16:30:10 by pdeguing          #+#    #+#              #
-#    Updated: 2018/09/24 12:03:11 by pdeguing         ###   ########.fr        #
+#    Updated: 2018/09/24 13:48:10 by pdeguing         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ FT_LST		:= ft_lstadd.c ft_lstdel.c ft_lstdelone.c ft_lstiter.c ft_lstmap.c \
 FT_MEM		:= ft_bzero.c ft_memalloc.c ft_memccpy.c ft_memcpy.c ft_memdel.c \
 			  ft_memmove.c ft_memset.c
 
-FT_PRINTF	:=  format_char.c format_conversion.c format_int.c format_int_helpers.c \
+FT_PRINTF	:= format_char.c format_conversion.c format_int.c format_int_helpers.c \
 			   format_str.c ft_printf.c get_conversion.c get_flags.c get_utf.c \
 			   init_conversion.c print_format.c
 
@@ -58,7 +58,7 @@ INT_D		:= $(addprefix $(INTDIR)/, $(FT_INT))
 IS_D		:= $(addprefix $(ISDIR)/, $(FT_IS))
 LST_D		:= $(addprefix $(LSTDIR)/, $(FT_LST))
 MEM_D		:= $(addprefix $(MEMDIR)/, $(FT_MEM))
-PRINTF_D	:= $(addprefix $(PRINTFDIR)/, $(FT_RPINTF))
+PRINTF_D	:= $(addprefix $(PRINTFDIR)/, $(FT_PRINTF))
 PUT_D		:= $(addprefix $(PUTDIR)/, $(FT_PUT))
 STR_D		:= $(addprefix $(STRDIR)/, $(FT_STR))
 UTILS_D		:= $(addprefix $(UTILSDIR)/, $(FT_UTILS))
