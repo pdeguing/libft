@@ -6,7 +6,7 @@
 #    By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/11 16:30:10 by pdeguing          #+#    #+#              #
-#    Updated: 2018/09/25 11:32:06 by pdeguing         ###   ########.fr        #
+#    Updated: 2018/09/26 14:14:03 by pdeguing         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,10 +49,10 @@ FT_STR		:= ft_strcat.c ft_strcpy.c ft_strffjoin.c ft_striteri.c ft_strmap.c \
 			  ft_strfjoin.c	ft_strjoin.c ft_strmapi.c ft_strnequ.c ft_strsplit.c \
 			  ft_strclr.c ft_strdup.c ft_strfljoin.c ft_strlcat.c ft_strncat.c \
 			  ft_strnew.c ft_strstr.c ft_strcmp.c ft_strequ.c ft_striter.c \
-			  ft_strlen.c ft_strncmp.c ft_strnstr.c	ft_strsub.c
+			  ft_strlen.c ft_strncmp.c ft_strccmp.c ft_strnstr.c ft_strsub.c
 
 FT_UTILS	:= ft_capitalize.c ft_ctostr.c ft_intlen.c ft_tolower.c ft_toupper.c \
-			  ft_uintlen.c ft_wrdc.c ft_wrdlen.c get_next_line.c
+			  ft_uintlen.c ft_wrdc.c ft_wrdlen.c get_next_line.c ft_pstrcchr.c
 
 INT_D		:= $(addprefix $(INTDIR)/, $(FT_INT))
 IS_D		:= $(addprefix $(ISDIR)/, $(FT_IS))

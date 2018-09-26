@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/09 13:09:12 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/25 11:39:08 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/09/26 14:16:30 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ char				*ft_strstr(const char *haystack, const char *needle);
 char				*ft_strnstr(const char *big, const char *small, size_t len);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
+int					ft_strccmp(const char *s1, const char *s2, char n);
 
 char				*ft_strnew(size_t size);
 void				ft_strdel(char **as);
@@ -106,5 +107,7 @@ char				*ft_ctostr(char c);
 
 int					ft_printf(const char *fmt, ...);
 int					get_next_line(const int fd, char **line);
+
+char				**ft_pstrcchr(char **pstr, char *str, char c);
 
 #endif
