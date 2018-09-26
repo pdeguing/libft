@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/13 11:10:51 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/20 16:07:24 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/09/26 10:47:46 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ void	format_conversion(t_f *f, char **fmt, char **pref, char **suf)
 	int	len;
 
 	len = ft_strlen(*fmt);
-	if (ft_strchr(*fmt, '-'))
+	if (f->specifier != 's' && ft_strchr(*fmt, '-'))
 	{
 		f->neg = 1;
 		len--;
