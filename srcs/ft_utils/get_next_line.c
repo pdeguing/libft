@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/03 21:49:22 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/08/18 07:15:29 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/10/03 12:27:41 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int					get_next_line(const int fd, char **line)
 
 	!line_list ? (line_list = ft_lstnew("\0", fd)) : NULL;
 	curr = get_current_node(fd, &line_list);
-	if (!(buffer = readnl(curr->content, fd)) || line == NULL)
+	if ((buffer = readnl(curr->content, fd)) == NULL || line == NULL)
 		return (-1);
 	if (!ft_strlen(buffer) && !ft_strlen(curr->content))
 		return (0);
