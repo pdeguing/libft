@@ -6,7 +6,7 @@
 #    By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/11 16:30:10 by pdeguing          #+#    #+#              #
-#    Updated: 2018/10/04 08:49:17 by pdeguing         ###   ########.fr        #
+#    Updated: 2018/10/04 16:48:11 by pdeguing         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,32 +72,32 @@ OBJECTS		:= $(addprefix $(OBJDIR)/, $(patsubst %.c, %.o, $(ALL)))
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	ar rcs $@ $^
-	ranlib $@
+	@ ar rcs $@ $^
+	@ ranlib $@
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c | $(OBJDIR)
-	gcc -c $(CFLAGS) -I$(INCDIR) $< -o $@
+	@ gcc -c $(CFLAGS) -I$(INCDIR) $< -o $@
 
 $(OBJDIR):
-	mkdir $(OBJDIR)
-	mkdir $(addprefix $(OBJDIR)/, $(INTDIR))
-	mkdir $(addprefix $(OBJDIR)/, $(ISDIR))
-	mkdir $(addprefix $(OBJDIR)/, $(LSTDIR))
-	mkdir $(addprefix $(OBJDIR)/, $(MEMDIR))
-	mkdir $(addprefix $(OBJDIR)/, $(PRINTFDIR))
-	mkdir $(addprefix $(OBJDIR)/, $(PUTDIR))
-	mkdir $(addprefix $(OBJDIR)/, $(STRDIR))
-	mkdir $(addprefix $(OBJDIR)/, $(UTILSDIR))
+	@ mkdir $(OBJDIR)
+	@ mkdir $(addprefix $(OBJDIR)/, $(INTDIR))
+	@ mkdir $(addprefix $(OBJDIR)/, $(ISDIR))
+	@ mkdir $(addprefix $(OBJDIR)/, $(LSTDIR))
+	@ mkdir $(addprefix $(OBJDIR)/, $(MEMDIR))
+	@ mkdir $(addprefix $(OBJDIR)/, $(PRINTFDIR))
+	@ mkdir $(addprefix $(OBJDIR)/, $(PUTDIR))
+	@ mkdir $(addprefix $(OBJDIR)/, $(STRDIR))
+	@ mkdir $(addprefix $(OBJDIR)/, $(UTILSDIR))
 
 clean:
-	/bin/rm -rf $(OBJDIR)
+	@ /bin/rm -rf $(OBJDIR)
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	@ /bin/rm -f $(NAME)
 
 re: fclean all
 
 norm:
-	norminette $(SRCS) $(HEADERS)
+	@ norminette $(SRCS) $(HEADERS)
 
 .PHONY: clean fclean all re
