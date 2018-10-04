@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 10:21:52 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/07/20 09:32:01 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/10/04 15:47:27 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strdup(const char *s1)
 	size_t	i;
 	size_t	len;
 
+	if (s1 == NULL)
+		return (NULL);
 	i = 0;
 	len = ft_strlen(s1);
 	dup = (char *)malloc(sizeof(char) * len + 1);
