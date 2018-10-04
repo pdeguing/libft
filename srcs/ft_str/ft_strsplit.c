@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/11 10:39:41 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/07/19 18:25:14 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/10/04 10:38:43 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,7 @@ char	**ft_strsplit(char const *s, char c)
 			i++;
 		if (s[i] == '\0')
 			break ;
-		if (!(t[j] = (char *)malloc(sizeof(char) *
-						(ft_wrdlen((char *)&s[i], c) + 1))))
+		if (!(t[j] = ft_strnew(ft_wrdlen((char *)&s[i], c))))
 			return (NULL);
 		k = 0;
 		while (s[i] != c && s[i])

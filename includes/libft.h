@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/09 13:09:12 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/26 14:16:30 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/10/04 08:48:54 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,5 +109,6 @@ int					ft_printf(const char *fmt, ...);
 int					get_next_line(const int fd, char **line);
 
 char				**ft_pstrcchr(char **pstr, char *str, char c);
+void				ft_pstrdel(char **pstr);
 
 #endif
