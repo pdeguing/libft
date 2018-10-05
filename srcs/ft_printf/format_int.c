@@ -6,7 +6,7 @@
 /*   By: pdeguing <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/13 11:11:50 by pdeguing          #+#    #+#             */
-/*   Updated: 2018/09/24 12:17:23 by pdeguing         ###   ########.fr       */
+/*   Updated: 2018/10/04 17:10:54 by pdeguing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,6 @@ char	*format_int(t_f *f, va_list args)
 	if (f->specifier == 'X')
 		return (ft_capitalize(ft_utoa(va_arg(args, unsigned int), 16)));
 	if (f->specifier == 'b')
-		return(ft_utoa(va_arg(args, unsigned int), 2));
+		return (ft_utoa(va_arg(args, unsigned int), 2));
 	return (NULL);
 }
